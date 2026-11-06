@@ -1,0 +1,17 @@
+{
+  "status": "PREFLIGHT_COMPLETE_API_RUN_PENDING",
+  "lecturer_approval": "CONFIRMED_BY_USER",
+  "prediction_rows_available": 1327,
+  "selected_cases": 5,
+  "selected_test_row_indices": [
+    0,
+    332,
+    663,
+    994,
+    1326
+  ],
+  "validation_mae_ug_m3": 1.9825258910042467,
+  "api_calls_made": 0,
+  "reason_api_run_pending": "The API key shared in chat must be revoked. A replacement key must be configured locally in .env; secrets must not be placed in shared files or chat.",
+  "leakage_control": "Preflight CSV excludes actual target values, residuals and baseline predictions."
+}

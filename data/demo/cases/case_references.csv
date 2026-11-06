@@ -1,0 +1,3 @@
+case,input_file,forecast_target_timestamp,last_input_timestamp,lookback_rows,actual_benzene_ug_m3,recorded_ann_prediction_ug_m3,absolute_error_ug_m3,residual_actual_minus_prediction,interpretation,source
+typical_case,typical_case_input.csv,2005-03-13 04:00:00,2005-03-13 03:00:00,24,2.5,1.3541622,1.1458378,1.1458378,Underprediction: actual is higher than forecast.,Original chronological held-out test prediction; actual value is reference-only and excluded from app input.
+largest_error_case,largest_error_case_input.csv,2005-02-14 11:00:00,2005-02-14 10:00:00,24,33.9,8.326652,25.573348,25.573348,Underprediction: actual is higher than forecast.,Original chronological held-out test prediction; actual value is reference-only and excluded from app input.

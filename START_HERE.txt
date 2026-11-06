@@ -1,0 +1,14 @@
+AIR QUALITY INTELLIGENCE – START HERE
+
+1. Read README.md and docs/assessment_mapping.md.
+2. Submit docs/lecturer_approval_request.md for approval before treating the problem and GenAI adjacent task as approved. Review docs/genai_human_review.md if the optional LLM evaluation is approved and run.
+3. Create the environment (see README.md or environment.yml).
+4. Run: python scripts/download_data.py
+5. Run: python scripts/run_pipeline.py
+6. Run: python scripts/generate_report.py
+7. Run: pytest -q
+8. Run: streamlit run app/streamlit_app.py
+9. Complete the real-data result interpretation in reports/FINAL_REPORT.md, fill your details, and review docs/demo_script_8min.md.
+10. For the submission ZIP, include the downloaded data/raw/AirQualityUCI.csv, data/raw/dataset_manifest.json, all generated models/, experiments/, outputs/, and reports/ files.
+
+IMPORTANT: The initial ZIP intentionally does not contain a real-data-trained model or made-up UCI scores. It includes the official UCI downloader and a tested end-to-end pipeline. Do not submit the report until the UCI run has completed and all PENDING items have been replaced by measured results.

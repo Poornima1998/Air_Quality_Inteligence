@@ -1,0 +1,56 @@
+{
+  "rows_after_hourly_reindex": 9357,
+  "columns": 13,
+  "date_start": "2004-03-10 18:00:00",
+  "date_end": "2005-04-04 14:00:00",
+  "target": "C6H6(GT)",
+  "target_observed": 8991,
+  "target_missing": 366,
+  "target_missing_pct": 3.9115100993908305,
+  "target_min": 0.1,
+  "target_median": 8.2,
+  "target_mean": 10.083105327549772,
+  "target_max": 63.7,
+  "missing_by_column": {
+    "NMHC(GT)": 8443,
+    "CO(GT)": 1683,
+    "NO2(GT)": 1642,
+    "NOx(GT)": 1639,
+    "PT08.S1(CO)": 366,
+    "PT08.S2(NMHC)": 366,
+    "C6H6(GT)": 366,
+    "PT08.S3(NOx)": 366,
+    "PT08.S4(NO2)": 366,
+    "PT08.S5(O3)": 366,
+    "T": 366,
+    "RH": 366,
+    "AH": 366
+  },
+  "split_indices": {
+    "train_end": 6549,
+    "validation_end": 7953,
+    "n_rows": 9357,
+    "preprocessor_fit_rows": 6548
+  },
+  "split_samples": {
+    "train": 6377,
+    "validation": 1263,
+    "test": 1327
+  },
+  "leakage_audit": {
+    "reference_analyser_pollutant_inputs": [],
+    "target_row_excluded_from_input_window": true,
+    "forecast_horizon_hours": 1,
+    "lookback_hours": 24,
+    "chronological_split": true,
+    "preprocessor_fit_rows": 6548,
+    "preprocessor_max_fit_row_index": 6547,
+    "preprocessor_uses_only_training_input_rows": true,
+    "test_used_for_model_selection": false,
+    "train_max_feature_row_index": 6547,
+    "validation_min_target_row_index": 6549,
+    "validation_max_feature_row_index": 7951,
+    "test_min_target_row_index": 7953,
+    "pass": true
+  }
+}

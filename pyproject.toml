@@ -1,0 +1,16 @@
+[build-system]
+requires = ["setuptools>=68", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "air-quality-intelligence"
+version = "1.0.0"
+description = "Leakage-aware next-hour benzene forecasting with an LSTM ANN, a tuned classical baseline, XAI and a Streamlit application."
+requires-python = ">=3.10"
+
+[tool.setuptools.packages.find]
+where = ["src"]
+
+[tool.pytest.ini_options]
+pythonpath = ["src"]
+testpaths = ["tests"]

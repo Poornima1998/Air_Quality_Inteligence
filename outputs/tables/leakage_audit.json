@@ -1,0 +1,16 @@
+{
+  "reference_analyser_pollutant_inputs": [],
+  "target_row_excluded_from_input_window": true,
+  "forecast_horizon_hours": 1,
+  "lookback_hours": 24,
+  "chronological_split": true,
+  "preprocessor_fit_rows": 6548,
+  "preprocessor_max_fit_row_index": 6547,
+  "preprocessor_uses_only_training_input_rows": true,
+  "test_used_for_model_selection": false,
+  "train_max_feature_row_index": 6547,
+  "validation_min_target_row_index": 6549,
+  "validation_max_feature_row_index": 7951,
+  "test_min_target_row_index": 7953,
+  "pass": true
+}

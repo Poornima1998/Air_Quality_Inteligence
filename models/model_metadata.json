@@ -1,0 +1,118 @@
+{
+  "project": "Air Quality Intelligence \u2013 Next-Hour Benzene Forecasting",
+  "target": "C6H6(GT)",
+  "target_unit": "\u00b5g/m\u00b3",
+  "window_size": 24,
+  "horizon_hours": 1,
+  "input_features": [
+    "PT08.S1(CO)",
+    "PT08.S2(NMHC)",
+    "PT08.S3(NOx)",
+    "PT08.S4(NO2)",
+    "PT08.S5(O3)",
+    "T",
+    "RH",
+    "AH",
+    "PT08.S1(CO)__missing",
+    "PT08.S2(NMHC)__missing",
+    "PT08.S3(NOx)__missing",
+    "PT08.S4(NO2)__missing",
+    "PT08.S5(O3)__missing",
+    "T__missing",
+    "RH__missing",
+    "AH__missing",
+    "hour_sin",
+    "hour_cos",
+    "dow_sin",
+    "dow_cos",
+    "doy_sin",
+    "doy_cos"
+  ],
+  "ann_config": {
+    "lookback": 24,
+    "hidden_size": 96,
+    "num_layers": 1,
+    "dropout": 0.35,
+    "learning_rate": 0.0005,
+    "batch_size": 128,
+    "optimizer": "RMSprop"
+  },
+  "ann_input_size": 22,
+  "ann_parameter_count": 50977,
+  "ann_hidden_size": 96,
+  "ann_num_layers": 1,
+  "ann_dropout": 0.35,
+  "selected_experiment": "ANN-SEARCH-06",
+  "selected_seed": 42,
+  "selected_ann_best_epoch": 17,
+  "initial_ann_best_epoch": 13,
+  "validation_ann": {
+    "MAE": 1.9825258910042467,
+    "RMSE": 2.8166084975710883,
+    "R2": 0.8432551583464974,
+    "n": 1263
+  },
+  "validation_baseline": {
+    "MAE": 2.143533140868173,
+    "RMSE": 3.0836299820420323,
+    "R2": 0.8121268113783524,
+    "n": 1263
+  },
+  "test_ann": {
+    "MAE": 1.6543749992278796,
+    "RMSE": 2.490095557714049,
+    "R2": 0.8327595639150358,
+    "n": 1327
+  },
+  "test_initial_ann": {
+    "MAE": 1.7699905071679864,
+    "RMSE": 2.6314289147791134,
+    "R2": 0.8132362655540412,
+    "n": 1327
+  },
+  "test_baseline": {
+    "MAE": 1.9276382813453155,
+    "RMSE": 2.868221296742371,
+    "R2": 0.7781116112257482,
+    "n": 1327
+  },
+  "test_training_mean": {
+    "MAE": 5.867199841608836,
+    "RMSE": 6.823342639183995,
+    "R2": -0.255751266291143,
+    "n": 1327
+  },
+  "timing_seconds": {
+    "selected_ann_fit": 19.051230199984275,
+    "initial_ann_fit": 11.312826600042172,
+    "baseline_fit": 9.791757900035009,
+    "baseline_cv_search": 83.67032769997604,
+    "ann_test_inference_per_sample_ms": 0.016566088911603518,
+    "initial_ann_test_inference_per_sample_ms": 0.0066564430832896536,
+    "baseline_test_inference_per_sample_ms": 0.0167172569704341,
+    "training_mean_test_inference_per_sample_ms": 6.812357939583247e-05
+  },
+  "validation_residual_std": 2.807070255279541,
+  "seed_summary": {
+    "seeds": [
+      2026,
+      42,
+      7
+    ],
+    "validation_mae_mean": 1.9924535970750477,
+    "validation_mae_std": 0.04659553326050169,
+    "validation_mae_min": 1.9516219895389093,
+    "validation_mae_max": 2.0432129106819867,
+    "selected_seed_median_validation_mae": 1.9825258910042467
+  },
+  "baseline_params": {
+    "min_samples_leaf": 10,
+    "max_leaf_nodes": 31,
+    "max_iter": 220,
+    "learning_rate": 0.03,
+    "l2_regularization": 0.1
+  },
+  "device_at_training": "cpu",
+  "test_evaluated_once_after_selection": true,
+  "test_used_for_model_selection": false
+}

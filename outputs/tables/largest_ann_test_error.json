@@ -1,0 +1,22 @@
+{
+  "timestamp": "2005-02-14 11:00:00",
+  "actual": 33.900001525878906,
+  "initial_ann_prediction": 8.941224098205566,
+  "ann_prediction": 8.326651573181152,
+  "baseline_prediction": 10.837343918109665,
+  "training_mean_prediction": 10.787077903747559,
+  "missing_input_fraction": 0.0,
+  "ann_residual": 25.573348999023438,
+  "baseline_residual": 23.06265760776924,
+  "input_last__PT08.S1(CO)": 1096.0,
+  "input_last__PT08.S2(NMHC)": 1036.0,
+  "input_last__PT08.S3(NOx)": 635.0,
+  "input_last__PT08.S4(NO2)": 1043.0,
+  "input_last__PT08.S5(O3)": 1127.0,
+  "input_last__T": 11.5,
+  "input_last__RH": 39.6,
+  "input_last__AH": 0.5372,
+  "month": 2,
+  "actual_band": "(10.5, 35.5]",
+  "input_quality_band": "low_missingness"
+}

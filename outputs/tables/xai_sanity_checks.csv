@@ -1,0 +1,3 @@
+case,feature_perturbed,lag_hours_before_forecast,perturbation_standardised_units,prediction_before,prediction_after,prediction_change,ig_attribution_for_perturbed_coordinate,direction_consistent_with_ig,interpretation
+1,PT08.S2(NMHC),0,0.1,8.27338981628418,8.490872383117676,0.2174825668334961,-0.19312210381031036,False,"Small local input perturbation; consistency is a sanity check, not a causal claim."
+2,PT08.S2(NMHC),0,0.1,3.00814151763916,3.1850643157958984,0.17692279815673828,-0.6184815168380737,False,"Small local input perturbation; consistency is a sanity check, not a causal claim."

@@ -1,0 +1,28 @@
+[
+  {
+    "case": "typical_case",
+    "input_file": "typical_case_input.csv",
+    "forecast_target_timestamp": "2005-03-13 04:00:00",
+    "last_input_timestamp": "2005-03-13 03:00:00",
+    "lookback_rows": 24,
+    "actual_benzene_ug_m3": 2.5,
+    "recorded_ann_prediction_ug_m3": 1.3541622,
+    "absolute_error_ug_m3": 1.1458378,
+    "residual_actual_minus_prediction": 1.1458378,
+    "interpretation": "Underprediction: actual is higher than forecast.",
+    "source": "Original chronological held-out test prediction; actual value is reference-only and excluded from app input."
+  },
+  {
+    "case": "largest_error_case",
+    "input_file": "largest_error_case_input.csv",
+    "forecast_target_timestamp": "2005-02-14 11:00:00",
+    "last_input_timestamp": "2005-02-14 10:00:00",
+    "lookback_rows": 24,
+    "actual_benzene_ug_m3": 33.9,
+    "recorded_ann_prediction_ug_m3": 8.326652,
+    "absolute_error_ug_m3": 25.573348,
+    "residual_actual_minus_prediction": 25.573348,
+    "interpretation": "Underprediction: actual is higher than forecast.",
+    "source": "Original chronological held-out test prediction; actual value is reference-only and excluded from app input."
+  }
+]
